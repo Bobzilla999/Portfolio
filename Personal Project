@@ -1,0 +1,17 @@
+codelessly_sdk: ^latest_version
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize SDK.
+  Codelessly.instance.initialize(
+    config: CodelesslyConfig(
+      authToken: JF46S05XSWwzaWNZfWJ2OEBxIUFkeXt9NCllOCUvPEB2UzJX,
+      isPreview: kDebugMode,
+    ),
+  );
+
+  runApp(const MyApp());
+}
+CodelesslyWidget(
+  layoutID: 0RSZY6F3hIUKwRyFd5QQ,
+)
